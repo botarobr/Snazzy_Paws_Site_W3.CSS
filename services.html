@@ -1,0 +1,90 @@
+<!--
+This is the W3.CSS refactored services.html page
+
+As required during Assessment 2, the services.html page for Snazzy Paws Grooming
+is the 'Services' page and must contain a table containing services and prices
+
+Some of the styles featured on this page have been migrated to W3.CSS on 17/05/2025
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Metatags for visualization and description have been added, as requested -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the wide range of pet grooming services offered by Snazzy Paws Grooming, including baths, haircuts, spa treatments, and more." />
+  <title>Services - Snazzy Paws Grooming</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<style>
+  table {
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+  }
+
+  td, th {
+    text-align: center !important; 
+  }
+</style>
+</head>
+<body class="w3-sans-serif w3-light-grey">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-32 w3-white">
+    <h1 class="w3-xxlarge">Snazzy Paws Grooming</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="w3-bar w3-light-grey w3-center w3-padding-small" role="navigation" aria-label="Main menu">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="services.html" class="w3-bar-item w3-button">Services</a>
+    <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+    <a href="booking.html" class="w3-bar-item w3-button">Booking</a>
+    <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    <a href="policy.html" class="w3-bar-item w3-button">Policy</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="w3-container">
+    <section class="w3-padding-large">
+      <h2 class="w3-center">Our Services</h2>
+
+      <!-- Services Table, from Assessment 2, now re-styled using W3.CSS framework -->
+      <div class="w3-responsive">
+        <table class="w3-table-all w3-hoverable w3-card-4" aria-label="List of grooming services and their price ranges">
+          <thead>
+            <tr class="w3-light-grey">
+              <th>Service</th>
+              <th>Price Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Bath and Brush</td><td>$25 – $50</td></tr>
+            <tr><td>Haircut</td><td>$45 – $85</td></tr>
+            <tr><td>Nail Trim</td><td>$10 – $20</td></tr>
+            <tr><td>Ear Cleaning</td><td>$10 – $15</td></tr>
+            <tr><td>Teeth Brushing</td><td>$10 – $15</td></tr>
+            <tr><td>De-shedding Treatment</td><td>+ $20 – $40</td></tr>
+            <tr><td>Flea and Tick Treatment</td><td>$15 – $30</td></tr>
+            <tr><td>Spa Package</td><td>$75 – $150</td></tr>
+            <tr><td>Express Service</td><td>+ $15 – $25</td></tr>
+            <tr><td>Medicated Bath</td><td>+ $20 – $40</td></tr>
+            <tr><td>Special-breed Cuts</td><td>Quoted after consultation</td></tr>
+            <tr><td>Puppy Package</td><td>$30 – $60</td></tr>
+            <tr><td>Senior Dog Package</td><td>$40 – $80</td></tr>
+            <tr><td>Full Grooming Package</td><td>$60 – $120</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-center w3-padding-16 w3-white" role="contentinfo">
+    <p>Opening Hours: Mon - Sat | 9am - 5pm</p>
+  </footer>
+
+</body>
+</html>
+

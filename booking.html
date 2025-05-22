@@ -1,0 +1,88 @@
+<!--
+This is the W3.CSS refactored booking.html page
+
+As required during Assessment 2, the booking.html page for Snazzy Paws Grooming
+is the 'Appointment Booking' page which must be
+a non-functional form containing inputs for:
+- owner’s name
+- email address
+- dog’s name
+- breed
+- age
+- submit button.
+In addition to the required, 'Preferred date' and
+'Preferred time' of booking have been included
+as features that would be expected in a 'booking' webpage.
+Some of the styles featured on this page have been migrated to W3.CSS on 17/05/2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Metatags for visualization and description have been added, as requested -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Book a grooming appointment for your furry friend at Snazzy Paws Grooming. Easy and convenient online booking available." />
+  <title>Booking - Snazzy Paws Grooming</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+ 
+</head>
+<body class="w3-light-grey">
+
+ <!-- Header -->
+  <header class="w3-container w3-center w3-padding-32 w3-white">
+    <h1 class="w3-xxlarge">Snazzy Paws Grooming</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="w3-bar w3-light-grey w3-center w3-padding-small" role="navigation" aria-label="Main menu">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="services.html" class="w3-bar-item w3-button">Services</a>
+    <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+    <a href="booking.html" class="w3-bar-item w3-button">Booking</a>
+    <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    <a href="policy.html" class="w3-bar-item w3-button">Policy</a>
+    <!-- This 'restricted area' link lands into the staff.html containing roster information for staff 
+    as requested on Task 1 - Part 1-->
+    <a href="staff.html" class="w3-bar-item w3-button">Restricted area</a>  
+  </nav>
+
+  <!-- Form section requested during Assessment 2, but now refactored using styles from W3.CSS framework -->
+  <main class="w3-container w3-padding-32">
+    <section class="w3-card-4 w3-white w3-padding-large w3-margin-top">
+      <h2 class="w3-center">Book a Grooming Appointment</h2>
+      <form class="w3-container">
+        <label for="owner-name" class="form-label">Owner's Name:</label>
+        <input class="w3-input w3-border" type="text" id="owner-name" name="owner-name" required>
+
+        <label for="email" class="form-label">Email Address:</label>
+        <input class="w3-input w3-border" type="email" id="email" name="email" required>
+
+        <label for="dog-name" class="form-label">Dog's Name:</label>
+        <input class="w3-input w3-border" type="text" id="dog-name" name="dog-name" required>
+
+        <label for="breed" class="form-label">Breed:</label>
+        <input class="w3-input w3-border" type="text" id="breed" name="breed">
+
+        <label for="age" class="form-label">Dog's Age:</label>
+        <input class="w3-input w3-border" type="number" id="age" name="age" min="0">
+
+        <label for="date" class="form-label">Preferred Date:</label>
+        <input class="w3-input w3-border" type="date" id="date" name="date" required>
+
+        <label for="time" class="form-label">Preferred Time:</label>
+        <input class="w3-input w3-border" type="time" id="time" name="time" required>
+
+        <button type="submit" class="w3-button w3-light-grey w3-margin-top w3-block">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-center w3-padding-16 w3-white" role="contentinfo">
+    <p>Opening Hours: Mon - Sat | 9am - 5pm</p>
+  </footer>
+
+</body>
+</html>
+

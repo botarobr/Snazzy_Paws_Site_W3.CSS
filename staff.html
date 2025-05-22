@@ -1,0 +1,73 @@
+<!--
+This is the page for staff named staff.html page
+
+As required by Task 1 - Part 1, item A of Assessment 
+3, the staff.html page for Snazzy Paws Grooming. This
+is the 'Roster Information' page and must rotected
+using an .htaccess configuration file
+
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Metatags for visualization and description have been added, as requested -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="For Staff Only - Check your working hours as well." />
+  <title>Staff - Snazzy Paws Grooming</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  
+<style>
+  table {
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+  }
+
+  td, th {
+    text-align: center !important; 
+  }
+</style>
+</head>
+<body class="w3-sans-serif w3-light-grey">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-32 w3-white">
+    <h1 class="w3-xxlarge">Snazzy Paws Grooming</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="w3-container">
+    <section class="w3-padding-large">
+      <h2 class="w3-center">Roster</h2>
+
+      <!-- Roster Table, as requested on Task 1 - Part 1 - Assessment 3-->
+      <div class="w3-responsive">
+        <table class="w3-table-all w3-hoverable w3-card-4" aria-label="List of staff and allocated days and working hours">
+          <thead>
+            <tr class="w3-light-grey">
+              <th>Staff</th>
+              <th>Working days</th>
+              <th>Rostered hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Tina</td><td>Mon - Fri</td><td>Morning</td></tr>
+            <tr><td>Rocky</td><td>Mon - Fri</td><td>Afternoon</td></tr>
+            <tr><td>Mona</td><td>Saturday</td><td>Morning</td></tr>
+            <tr><td>Bruce</td><td>Saturday</td><td>Afternoon</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-center w3-padding-16 w3-white" role="contentinfo">
+    <p>Opening Hours: Mon - Sat | 9am - 5pm</p>
+  </footer>
+
+</body>
+</html>
+
